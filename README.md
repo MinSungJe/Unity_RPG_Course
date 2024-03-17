@@ -15,17 +15,15 @@
 
 ## 📢 Recent Update
 **⚙ (2024-03-17)**
-> # ✏ Crash Course
-> **Crash Course**
->- Crash Course 파일 추가
->- Inheritance를 이용한 Player, Enemy 구현
+> # ✏ Start Course
+> **Creating Finite State Machine**
+>- State Machine 기본 구조 생성
 
 ## 🧾 Update History
 <details>
 <summary><b>⚙ (2024-03-17)</b></summary>
 
-> # ✏ Crash Course
-> **Crash Course**
->- Crash Course 파일 추가
->- Inheritance를 이용한 Player, Enemy 구현
+> # ✏ Start Course
+> **Creating Finite State Machine**
+>- State Machine 기본 구조 생성
 </details>
