@@ -14,7 +14,7 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-17)**
+**⚙ (2024-03-18)**
 > # ✏ Crash Course
 > **Crash Course**
 >- Crash Course 파일 추가
@@ -22,9 +22,9 @@
 
 ## 🧾 Update History
 <details>
-<summary><b>⚙ (2024-03-17)</b></summary>
+<summary><b>⚙ (2024-03-18)</b></summary>
 
-> # ✏ Crash Course
+> # ✏ Start Course
 > **Crash Course**
 >- Crash Course 파일 추가
 >- Inheritance를 이용한 Player, Enemy 구현
