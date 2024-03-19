@@ -14,11 +14,19 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-19)**
-> **Setup Animator with State Machine**
->- State Machine과 Animator 연결
+**⚙ (2024-03-20)**
+> **Movement with State Machine**
+>- IdleState <-> MoveState 간 change조건 변경
+>- MoveState의 Update에서 실제 캐릭터 이동
 
 ## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-03-19)</b></summary>
+
+> **Setup Animator with State Machine**
+>- State Machine과 Animator 연결
+</details>
+
 <details>
 <summary><b>⚙ (2024-03-17)</b></summary>
 
