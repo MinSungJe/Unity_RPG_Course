@@ -14,10 +14,9 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-17)**
-> # ✏ Start Course
-> **Creating Finite State Machine**
->- State Machine 기본 구조 생성
+**⚙ (2024-03-19)**
+> **Setup Animator with State Machine**
+>- State Machine과 Animator 연결
 
 ## 🧾 Update History
 <details>
