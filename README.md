@@ -18,6 +18,12 @@
 > **Movement with State Machine**
 >- IdleState <-> MoveState 간 change조건 변경
 >- MoveState의 Update에서 실제 캐릭터 이동
+>
+> **Jump with State Machine**
+>- SuperState인 GroundedState 추가
+>- GroundedState에 Jump입력 추가
+>- 상속 현황 : State > GroundedState > IdleState, JumpState
+>- ❗ Player의 State 선언부에 맨 마지막 자식 State들을 선언한다
 
 ## 🧾 Update History
 <details>
