@@ -37,7 +37,7 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-20)**
+**⚙ (2024-03-21)**
 > **Collision Check**
 >- Gizmos, Physics2D.Raycast를 이용해 Ground(LayerMask) 충돌 체크
 >- Player 내에 isGroundDetected() 추가
