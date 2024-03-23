@@ -37,7 +37,23 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-21)**
+**⚙ (2024-03-23)**
+> **Creating Dash State**
+>- Dash State 추가
+>- stateTimer를 이용해 Dash State에 머무르는 시간 설정
+>- PlayerGroundedState에서 Shift 입력 받음
+>
+> **Improving Dash State**
+>- PlyaerGroundedState -> Player 스크립트로 Shift 입력부 변경
+>- 이를 통해 모든 상황에서 Dash 가능
+>- facingDir이 아닌 DashDir로 대쉬 방향 변경
+>- DashCooldown 추가
+
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-03-21)</b></summary>
+
 > **Collision Check**
 >- Gizmos, Physics2D.Raycast를 이용해 Ground(LayerMask) 충돌 체크
 >- Player 내에 isGroundDetected() 추가
@@ -46,8 +62,9 @@
 > **Flip**
 >- Rotation(0, 180, 0)을 이용해 Player 좌우반전
 >- Player 내에 Flip(), FlipController() 추가
+</details>
 
-## 🧾 Update History
+
 <details>
 <summary><b>⚙ (2024-03-20)</b></summary>
 
