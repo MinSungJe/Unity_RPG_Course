@@ -22,7 +22,7 @@ public class PlayerAirState : PlayerState
     {
         base.Update();
 
-        if (player.isGroundDetected())
+        if (player.IsGroundDetected())
             stateMachine.ChangeState(player.idleState);
     }
 }

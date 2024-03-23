@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     [Header("Move Info")]
     public float moveSpeed = 8;
     public float jumpForce;
+    public float dashSpeed;
+    public float dashDuration;
 
     [Header("Collision Info")]
     [SerializeField] private Transform groundCheck;
@@ -23,16 +25,14 @@ public class Player : MonoBehaviour
     #region Components
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
-
     #endregion
     #region States 
     public PlayerStateMachine stateMachine { get; private set; }
-
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
     public PlayerJumpState jumpState { get; private set; }
     public PlayerAirState airState { get; private set; }
-
+    public PlayerDashState dashState { get; private set; }
     #endregion
     
     private void Awake()
@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
         moveState = new PlayerMoveState(this, stateMachine, "Move");
         jumpState = new PlayerJumpState(this, stateMachine, "Jump");
         airState  = new PlayerAirState(this, stateMachine, "Jump");
+        dashState = new PlayerDashState(this, stateMachine, "Dash");
     }
 
     private void Start()
@@ -58,13 +59,13 @@ public class Player : MonoBehaviour
         stateMachine.currentState.Update();
     }
 
-    public void setVelocity(float _xVelocity, float _yVelocity)
+    public void SetVelocity(float _xVelocity, float _yVelocity)
     {   
         rb.velocity = new Vector2(_xVelocity, _yVelocity);
         FlipController(_xVelocity);
     }
 
-    public bool isGroundDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
+    public bool IsGroundDetected() => Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, whatIsGround);
 
     private void OnDrawGizmos() {
         Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
