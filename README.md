@@ -74,7 +74,26 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-25)**
+**⚙ (2024-03-26)**
+> **Combo Attacks**
+>- Primary Attack State 안에 comboCounter, lastTimeAttack, comboWindow 선언
+>- Sub Animator를 이용해 comboCounter를 조건으로 Animation 변경
+>- 공격 후 시간이 지나면 comboCounter가 0으로 변경됨
+>
+> **Finalize Attack State**
+>- 공격 도중 이동할 수 없도록 하기 위해 stateTimer 설정
+>- 콤보 도중 이동할 수 없도록 player에게 isBusy 변수 추가(나중에 많이 활용될 예정)
+>- 코루틴 함수인 BusyFor 추가
+>- 공격이 player의 Velocity를 약간 변경시킴
+>
+> **Attack's direction**
+>- 공격 중간에 공격방향 변경 가능(AttackDir 이용)
+
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-03-25)</b></summary>
+
 > **Primary Attack State**
 >- Primary Attack State 추가
 >- Attack 1~3 Animation 생성
@@ -82,8 +101,8 @@
 >   - Exit : Animator의 add Event 기능 이용, triggerCalled = true
 >- Animator의 add Event 기능을 이용한 State 변경 구현
 
+</details>
 
-## 🧾 Update History
 <details>
 <summary><b>⚙ (2024-03-24)</b></summary>
 
