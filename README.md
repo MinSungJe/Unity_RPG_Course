@@ -23,7 +23,7 @@
 <summary><b>🤔 State가 뭐임?</b></summary>
 
 - GameObject의 상태
-- ❗<b>GameObject는 모든 시간에 하나의 State만 가지고 있음</b>
+- ❗FSM(Finite State Machine) 모델 : <b>GameObject는 모든 시간에 하나의 State만 가지고 있음</b>
 - Update()를 가지고 있어 해당 State 중 할 행동을 결정 가능
 - 특정 조건이 충족되면 StateMachine의 ChangeState()를 이용해 다른 State로 전환됨
 - 들어오는 조건이나 나가는 조건은 State의 Update()에서 정의됨  
