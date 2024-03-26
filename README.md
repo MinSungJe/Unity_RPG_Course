@@ -62,6 +62,15 @@
     7. Animator의 add Event 기능을 이용해 Animator의 함수를 Animation 끝단에 불러오기
 
 </details>
+<details>
+<summary><b>🤔 Coroutine이 뭐임?</b></summary>
+
+- 필요에 따라 일시정지 할 수 있는 함수
+- StartCoroutine(IEnumerator 반환 함수, 함수에 전달할 인자)로 호출 가능
+- IEnumerator 반환 함수 안에 yield를 이용한 WaitForSeconds() 이용
+- 참고: IEnumerator란 작업을 분할하여 수행하는 함수라고 생각하면 편하다 (실은 인터페이스)
+
+</details>
 
 
 ## 📢 Recent Update
