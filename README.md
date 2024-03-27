@@ -74,7 +74,16 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-26)**
+**⚙ (2024-03-27)**
+> **Combo Attacks**
+>- Tile Palette 추가
+>- Palette 내부에 Tile Assets 추가
+
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-03-26)</b></summary>
+
 > **Combo Attacks**
 >- Primary Attack State 안에 comboCounter, lastTimeAttack, comboWindow 선언
 >- Sub Animator를 이용해 comboCounter를 조건으로 Animation 변경
@@ -89,8 +98,6 @@
 > **Attack's direction**
 >- 공격 중간에 공격방향 변경 가능(AttackDir 이용)
 
-
-## 🧾 Update History
 <details>
 <summary><b>⚙ (2024-03-25)</b></summary>
 
