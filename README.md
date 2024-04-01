@@ -79,6 +79,15 @@
 >- Cinemachine Asset 추가
 >- Cinemachine -> VirtualCamera 추가
 >- 이제 카메라가 캐릭터를 따라 부드럽게 움직임
+>
+> **Parallax background**
+>- Background 추가(달배경, 성배경)
+>- Sorting Layer를 이용해 보이는 순서 설정
+>- ParallexBackground Script를 이용해 긴 배경 이미지가 카메라를 따라 움직이도록 함
+>
+> **Endless background**
+>- ParallexBackground Script를 이용해 긴 배경 이미지를 모두 이동할 경우 이미지를 옮김
+>>- 이로써 배경이 끝이 없는 것처럼 만들 수 있음
 
 
 ## 🧾 Update History
