@@ -74,14 +74,24 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-03-28)**
+**⚙ (2024-04-01)**
+> **Camera**
+>- Cinemachine Asset 추가
+>- Cinemachine -> VirtualCamera 추가
+>- 이제 카메라가 캐릭터를 따라 부드럽게 움직임
+
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-03-28)</b></summary>
+
 > **Tile Map Collider**
 >- Tile Map Collider 추가
 >- Composite Collider 추가
 >- 맵 변경
 
+</details>
 
-## 🧾 Update History
 <details>
 <summary><b>⚙ (2024-03-27)</b></summary>
 
