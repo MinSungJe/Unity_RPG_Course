@@ -74,7 +74,15 @@
 
 
 ## 📢 Recent Update
-**⚙ (2024-04-01)**
+**⚙ (2024-04-02)**
+> **Enemy's State Machine**
+>- Enemy, EnemyState, EnemyStateMachine 스크립트 추가
+
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-01)</b></summary>
+
 > **Camera**
 >- Cinemachine Asset 추가
 >- Cinemachine -> VirtualCamera 추가
@@ -89,8 +97,8 @@
 >- ParallexBackground Script를 이용해 긴 배경 이미지를 모두 이동할 경우 이미지를 옮김
 >>- 이로써 배경이 끝이 없는 것처럼 만들 수 있음
 
+</details>
 
-## 🧾 Update History
 <details>
 <summary><b>⚙ (2024-03-28)</b></summary>
 
