@@ -19,6 +19,7 @@
 - 부모 class를 바탕으로 자식 class를 만들어내는 기법
 - ❗<b>왜 씀? : 코드 관리가 편해지고, 특정 코드의 재사용이 용이함</b>
 </details>
+
 <details>
 <summary><b>🤔 State가 뭐임?</b></summary>
 
@@ -31,12 +32,25 @@
 - 들어올때 한번 실행되는 Enter(), 나갈때 한번 실행되는 Exit(), 실시간으로 실행되는 Update()로 구성
 - GameObject Script에선 모든 말단 State를 선언해 둠
 </details>
+
 <details>
 <summary><b>🤔 StateMachine?</b></summary>
 
 - GameObject의 State를 관리하는 역할
 - 기능 : Initialize(), ChangeState()
 </details>
+
+<details>
+<summary><b>🤔 새로운 FSM의 기본 셋팅을 해보자</b></summary>
+
+- ❗<b>GameObject, State, StateMachine 세 스크립트를 만들면 된다!</b>
+    |이름|구성|
+    |--|--|
+    |GameObject|Component들(rigidbody, animator) 추가 / stateMachine과 state들 선언 / Update에 stateMachine을 이용해 현재 state를 가져오고 그 state의 Update()를 불러옴|
+    |State|GameObject, stateMachine, animBoolName을 인자로 생성자 추가 / Enter(), Exit(), Update() virtual로 만들고 내용 채우기(anim 관련: Enter시 true, Exit시 false) / stateTimer, triggerCalled 등 state안에서 사용할 변수 선언|
+    |StateMachine|현재 state(currentState)를 담음 / Initialize()와 ChangeState() 함수 생성|
+</details>
+
 <details>
 <summary><b>🤔 새로운 State를 추가해보자</b></summary>
 
@@ -47,6 +61,7 @@
     4. 해당 State를 갖는 Gameobject의 Script로 가서 변수와 Awake()를 통해 State 정의
     5. Animator에서 연결(Animation 생성, bool 추가, transition 조건 추가)
 </details>
+
 <details>
 <summary><b>🤔 Animation이 끝나면 State를 바꾸고 싶어</b></summary>
 
@@ -62,6 +77,7 @@
     7. Animator의 add Event 기능을 이용해 Animator의 함수를 Animation 끝단에 불러오기
 
 </details>
+
 <details>
 <summary><b>🤔 Coroutine이 뭐임?</b></summary>
 
