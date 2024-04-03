@@ -88,14 +88,37 @@
 
 </details>
 
+<details>
+<summary><b>🤔 Inheritance를 왜 쓰는 거에요</b></summary>
+
+- 이미 만들어진 Player Script의 기능을 Enemy Script를 만들때 쓰고 싶음
+- 땅이나 벽을 인식하거나 뒤집히거나 등등...
+- ❗<b>이럴때 공통된 기능을 하나의 스크립트로 빼고 이를 상속시켜 사용하면 좋음!</b>
+    1. 똑같은 코드를 다른 스크립트에 중복해서 안써도 됨
+    2. 중복코드를 다른 코드로 빼두니까 가독성 좋아짐
+- 상속시키는 방법:
+    1. 가져올 함수는 뻬와서 virtual 키워드 붙이기
+    2. 상속받을 함수는 override 붙이기
+    3. private -> protected (인자든 함수든)
+
+</details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-02)**
-> **Enemy's State Machine**
->- Enemy, EnemyState, EnemyStateMachine 스크립트 추가
+**⚙ (2024-04-03)**
+> **Making inheritance for Player and Enemy**
+>- Player의 Script 중 Enemy에 공통적으로 적용시킬 부분을 Entity로 빼둠
+>- Player 스크립트는 Entity 스크립트를 상속받음
 
 
 ## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-02)</b></summary>
+
+> **Enemy's State Machine**
+>- Enemy, EnemyState, EnemyStateMachine 스크립트 추가
+
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-01)</b></summary>
 
