@@ -104,13 +104,22 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-03)**
+**⚙ (2024-04-04)**
+> **Enemy's Idle and Move State**
+>- Enemy_Skeleton 추가
+>- skeletonIdleState, skeletonMoveState 추가
+>- Entity > Enemy > Enemy_Skeleton 순으로 상속 후 Enemy_Skeleton 안에 State들 정의
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-03)</b></summary>
+
 > **Making inheritance for Player and Enemy**
 >- Player의 Script 중 Enemy에 공통적으로 적용시킬 부분을 Entity로 빼둠
 >- Player 스크립트는 Entity 스크립트를 상속받음
 
+</details>
 
-## 🧾 Update History
 <details>
 <summary><b>⚙ (2024-04-02)</b></summary>
 
