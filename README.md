@@ -14,10 +14,11 @@
 
 ## ✍️ NotePad
 <details>
-<summary><b>🤔 상속이란?</b></summary>
+<summary><b>🤔 상속을 왜씀?</b></summary>
 
-- 부모 class를 바탕으로 자식 class를 만들어내는 기법
+- Inheritance : 부모 class를 바탕으로 자식 class를 만들어내는 기법
 - ❗<b>왜 씀? : 코드 관리가 편해지고, 특정 코드의 재사용이 용이함</b>
+- 중복된 코드가 있다면 상속을 이용해 하나의 코드로 합쳐볼 수 있을지 생각해보자
 </details>
 
 <details>
@@ -104,13 +105,24 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-04)**
+**⚙ (2024-04-05)**
+> **Enemy's Battle State**
+>- SkeletonBattleState 추가
+>- BattleState로 들어가기 위한 조건이 중복되어 SkeletonGroundedState를 추가함
+>- Player를 인식하는 RaycastHit2D 추가
+>- Player를 인식하는 Raycast와 그 범위를 보여주는 Gizmos 추가
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-04)</b></summary>
+
 > **Enemy's Idle and Move State**
 >- Enemy_Skeleton 추가
 >- skeletonIdleState, skeletonMoveState 추가
 >- Entity > Enemy > Enemy_Skeleton 순으로 상속 후 Enemy_Skeleton 안에 State들 정의
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-03)</b></summary>
 
