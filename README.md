@@ -105,14 +105,27 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-05)**
+**⚙ (2024-04-06)**
+> **Enemy's Attack State**
+>- 실제로 공격하는 SkeletonAttackState 추가
+>- 관련 Animation, Animator변수, State 연결
+>- Time.time 이용 Cooldown 구현
+>
+> **Finalize Battle State**
+>- Vector2.Distance() 함수를 이용해 플레이어간 거리에 따른 전환 조건 추가
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-04)</b></summary>
+
 > **Enemy's Battle State**
 >- SkeletonBattleState 추가
 >- BattleState로 들어가기 위한 조건이 중복되어 SkeletonGroundedState를 추가함
 >- Player를 인식하는 RaycastHit2D 추가
 >- Player를 인식하는 Raycast와 그 범위를 보여주는 Gizmos 추가
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-04)</b></summary>
 
