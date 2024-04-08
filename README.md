@@ -104,8 +104,25 @@
 
 </details>
 
+<details>
+<summary><b>🤔 어떤 Object의 애니메이션에 맞춰 뭔가 실행시키고 싶어</b></summary>
+
+- ❗<b>애니메이션에 맞춰 뭔가 실행되고 싶다면, 해당 Animator에 들어간 스크립트를 이용</b>한다.
+- 공격 프레임에 맞춘 데미지, 공격 프레임 종료 후 다른 State로 전환 등등...
+
+</details>
+
 ## 📢 Recent Update
-**⚙ (2024-04-06)**
+**⚙ (2024-04-08)**
+> **Attack Logic**
+>- Entity에 Damage() 함수와 공격범위 관련 변수 추가
+>- AnimationTrigger 스크립트에 공격 관련 코드 추가
+>- 공격과 데미지를 받는 로직 추가
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-06)</b></summary>
+
 > **Enemy's Attack State**
 >- 실제로 공격하는 SkeletonAttackState 추가
 >- 관련 Animation, Animator변수, State 연결
@@ -113,16 +130,6 @@
 >
 > **Finalize Battle State**
 >- Vector2.Distance() 함수를 이용해 플레이어간 거리에 따른 전환 조건 추가
-
-## 🧾 Update History
-<details>
-<summary><b>⚙ (2024-04-04)</b></summary>
-
-> **Enemy's Battle State**
->- SkeletonBattleState 추가
->- BattleState로 들어가기 위한 조건이 중복되어 SkeletonGroundedState를 추가함
->- Player를 인식하는 RaycastHit2D 추가
->- Player를 인식하는 Raycast와 그 범위를 보여주는 Gizmos 추가
 
 </details>
 
