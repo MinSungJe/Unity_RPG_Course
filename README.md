@@ -116,6 +116,11 @@
 **⚙ (2024-04-09)**
 > **Collider's collision exception**
 >- Player와 Enemy의 충돌을 제거(Edit -> Project Settings -> Physics2D -> Layer Collision Matrix)
+>
+> **On Hit Fx**
+>- EntityFX 스크립트 추가
+>- EntityFX 안에 FlashFX IEnumerator 반환 함수 추가 :  
+>   >Damage를 받으면 코루틴으로 특정시간 동안 Animator의 Sprite Renderer 속 Material을 바꿈
 
 ## 🧾 Update History
 <details>
