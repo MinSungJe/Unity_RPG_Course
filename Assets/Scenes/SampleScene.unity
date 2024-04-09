@@ -1802,6 +1802,7 @@ GameObject:
   - component: {fileID: 484303911}
   - component: {fileID: 484303912}
   - component: {fileID: 484303913}
+  - component: {fileID: 484303914}
   m_Layer: 7
   m_Name: Enemy_Skeleton
   m_TagString: Untagged
@@ -1930,6 +1931,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.4782991}
   m_EdgeRadius: 0
+--- !u!114 &484303914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484303909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 278419fcf847cc243b61dd14fa95f38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitMat: {fileID: 2100000, guid: 84ee6a65c9e24cf49b523dec4c7cac4e, type: 2}
+  flashDuration: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2487,7 @@ GameObject:
   - component: {fileID: 1251904755}
   - component: {fileID: 1251904757}
   - component: {fileID: 1251904758}
+  - component: {fileID: 1251904759}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -2590,6 +2606,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &1251904759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251904754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 278419fcf847cc243b61dd14fa95f38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitMat: {fileID: 2100000, guid: 84ee6a65c9e24cf49b523dec4c7cac4e, type: 2}
+  flashDuration: 0.15
 --- !u!1 &1303118380
 GameObject:
   m_ObjectHideFlags: 0
