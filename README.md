@@ -113,13 +113,21 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-08)**
+**⚙ (2024-04-09)**
+> **Collider's collision exception**
+>- Player와 Enemy의 충돌을 제거(Edit -> Project Settings -> Physics2D -> Layer Collision Matrix)
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-08)</b></summary>
+
 > **Attack Logic**
 >- Entity에 Damage() 함수와 공격범위 관련 변수 추가
 >- AnimationTrigger 스크립트에 공격 관련 코드 추가
 >- 공격과 데미지를 받는 로직 추가
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-06)</b></summary>
 
