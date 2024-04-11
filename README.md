@@ -113,7 +113,19 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-09)**
+**⚙ (2024-04-11)**
+> **On Hit Impact**
+>- Damage시 넉백(특정 Vector2)을 일으키는 효과 추가
+>
+> **Attack's direction hot fix**
+>- Attack direction이 갑자기 바뀌는 현상 수정
+>- 원인 : Update에서만 xInput이 수정되므로 Enter가 연속되면 이전 xInput 값이 불러와짐
+>- 수정방법 : Enter에도 xInput을 수정하는 구문 추가
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-09)</b></summary>
+
 > **Collider's collision exception**
 >- Player와 Enemy의 충돌을 제거(Edit -> Project Settings -> Physics2D -> Layer Collision Matrix)
 >
@@ -122,7 +134,8 @@
 >- EntityFX 안에 FlashFX IEnumerator 반환 함수 추가 :  
 >   > Damage를 받으면 코루틴으로 특정시간 동안 Animator의 Sprite Renderer 속 Material을 바꿈
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-08)</b></summary>
 
