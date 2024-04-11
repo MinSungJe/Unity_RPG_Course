@@ -1841,6 +1841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cd427da271cae47b650e67a3d7ef62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackDirection: {x: 7, y: 12}
+  knockbackDuration: 0.07
   attackCheck: {fileID: 789265802}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 1025141852}
@@ -1874,7 +1876,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 12
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1943,8 +1945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278419fcf847cc243b61dd14fa95f38b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitMat: {fileID: 2100000, guid: 84ee6a65c9e24cf49b523dec4c7cac4e, type: 2}
   flashDuration: 0.2
+  hitMat: {fileID: 2100000, guid: 84ee6a65c9e24cf49b523dec4c7cac4e, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f58a12d08c0d08449e8027821c598c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackDirection: {x: 0, y: 0}
+  knockbackDuration: 0
   attackCheck: {fileID: 737083638}
   attackCheckRadius: 0.8
   groundCheck: {fileID: 1725570842}
@@ -2618,8 +2622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278419fcf847cc243b61dd14fa95f38b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitMat: {fileID: 2100000, guid: 84ee6a65c9e24cf49b523dec4c7cac4e, type: 2}
   flashDuration: 0.15
+  hitMat: {fileID: 2100000, guid: 84ee6a65c9e24cf49b523dec4c7cac4e, type: 2}
 --- !u!1 &1303118380
 GameObject:
   m_ObjectHideFlags: 0
