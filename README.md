@@ -80,7 +80,7 @@
 </details>
 
 <details>
-<summary><b>🤔 Coroutine이 뭐임?</b></summary>
+<summary><b>🤔 일정 시간 뒤에 함수를 실행시키고 싶어: Coroutine</b></summary>
 
 - 필요에 따라 일시정지 할 수 있는 함수
 - StartCoroutine(IEnumerator 반환 함수, 함수에 전달할 인자)로 호출 가능
@@ -112,8 +112,26 @@
 
 </details>
 
+<details>
+<summary><b>🤔 새로운 시간지연 함수를 소개합니다: Invoke</b></summary>
+
+- 코루틴과 쓰는 방향성은 비슷함. 시간지연시켜주고, 메인스레드와는 다른 서브스레드에서 실행시켜줌
+- 사용법이 코루틴보다 비교적 간단하고, 반복실행을 위한 코드도 있음
+- 사용법 : <code>Invoke("사용할 함수이름", 지연시간);</code>, <code>InvokeRepeating("사용할 함수이름", 지연시간, 반복 사이시간)</code>
+
+</details>
+
 ## 📢 Recent Update
-**⚙ (2024-04-11)**
+**⚙ (2024-04-12)**
+> **Counter attack - Enemy's Stun State**
+>- SkeletonStunnedState 추가 및 Animation 연결
+>- Stun 효과를 위해 EntityFX에 RedColorBlink 추가
+>- Invoke() 함수를 이용해 구현
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-11)</b></summary>
+
 > **On Hit Impact**
 >- Damage시 넉백(특정 Vector2)을 일으키는 효과 추가
 >
@@ -122,7 +140,8 @@
 >- 원인 : Update에서만 xInput이 수정되므로 Enter가 연속되면 이전 xInput 값이 불러와짐
 >- 수정방법 : Enter에도 xInput을 수정하는 구문 추가
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-09)</b></summary>
 
