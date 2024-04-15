@@ -122,13 +122,22 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-12)**
+**⚙ (2024-04-15)**
+> **Counter's attack window**
+>- Counter Attack이 가능한 구간을 보여주기 위해 CounterAttack 관련 스크립트 수정
+>- 이제 카운터가 가능한 시점에 Enemy의 뒤에 붉은색 window가 나타남
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-12)</b></summary>
+
 > **Counter attack - Enemy's Stun State**
 >- SkeletonStunnedState 추가 및 Animation 연결
 >- Stun 효과를 위해 EntityFX에 RedColorBlink 추가
 >- Invoke() 함수를 이용해 구현
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-11)</b></summary>
 
