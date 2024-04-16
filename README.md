@@ -122,12 +122,22 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-15)**
+**⚙ (2024-04-16)**
+> **Player's Counter Attack**
+>- PlayerCounterAttackState 추가
+>- Player Animation에 CounterAttack과 SucessfulCounterAttack 추가
+>- Animator와 해당 State의 스크립트를 이용해 CounterAttack 구현
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-15)</b></summary>
+
 > **Counter's attack window**
 >- Counter Attack이 가능한 구간을 보여주기 위해 CounterAttack 관련 스크립트 수정
 >- 이제 카운터가 가능한 시점에 Enemy의 뒤에 붉은색 window가 나타남
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-12)</b></summary>
 
