@@ -137,6 +137,12 @@
 **⚙ (2024-04-17)**
 > **Creating Player Manager and Skill Manager**
 >- 싱글톤 기법을 이용한 PlayerManager, SkillManager 스크립트 및 오브젝트 추가
+>
+> **Foundation of Skill System**
+>- 모든 Skill의 기초가 되는 Skill 스크립트 추가
+>- Skill에는 cooldown하고 cooldownTimer, UseSkill(), CanUseSkill()이 들어있음
+>- Dash Skill을 Player 스크립트에서 Dash_Skill 스크립트로 이전해서 구현
+>- 모든 Skill은 싱글톤 패턴으로 구현된 SkillManager에 의해 호출됨 
 
 ## 🧾 Update History
 <details>
