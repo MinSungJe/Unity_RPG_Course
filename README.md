@@ -121,14 +121,34 @@
 
 </details>
 
+<details>
+<summary><b>🤔 Singleton이 뭔가요?</b></summary>
+
+- Manager같이 게임 내에 해당 객체의 인스턴스가 한 개밖에 없어야 하는 경우를 구현하는 패턴
+    1. 하나의 인스턴스
+    2. 전역 접근 가능
+- 이를 통해 모든 스크립트에서 싱글톤에 담겨있는 하나의 Player에 접근할 수 있음
+- 쉽게 말해 전역변수 선언임 : 매우 간편하나 코드의 모듈성을 해칠 수 있음
+- 싱글톤이 중복구현되면 평행세계의 싱글톤 속 변수에 접근할 수 있으므로 이미 싱글톤이 있을 때 자동으로 삭제되도록 코드를 구현함
+
+</details>
+
 ## 📢 Recent Update
-**⚙ (2024-04-16)**
+**⚙ (2024-04-17)**
+> **Creating Player Manager and Skill Manager**
+>- 싱글톤 기법을 이용한 PlayerManager, SkillManager 스크립트 및 오브젝트 추가
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-16)</b></summary>
+
 > **Player's Counter Attack**
 >- PlayerCounterAttackState 추가
 >- Player Animation에 CounterAttack과 SucessfulCounterAttack 추가
 >- Animator와 해당 State의 스크립트를 이용해 CounterAttack 구현
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-15)</b></summary>
 
