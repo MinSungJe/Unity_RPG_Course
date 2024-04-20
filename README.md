@@ -133,8 +133,36 @@
 
 </details>
 
+<details>
+<summary><b>🤔 Prefab은 뭔가요?</b></summary>
+
+- GameObject 붕어빵 틀 같은 느낌
+- Instantiate()로 붕어빵을 찍어낼 수 있음
+- Type은 GameObject임
+
+</details>
+
+<details>
+<summary><b>🤔 (뇌피셜)어떨때는 Start에서 선언하고 어떨때는 Awake에서 선언하는데 뭔 차이임?</b></summary>
+
+- 스크립트에서 변수에 값을 넣는 방법으로 Awake에서 넣던가 Start에서 넣을 수 있음
+- 생명주기 상으로 Awake 다음 Start가 불러와짐
+- Awake에서 선언하는 경우는 Script를 불러오는 경우 (new Script()로 선언해서 가져오는 경우)
+- Start에서 선언하는 경우는 GameObject를 불러오는 경우 (GetComponent() 등)
+
+</details>
+
 ## 📢 Recent Update
-**⚙ (2024-04-18)**
+**⚙ (2024-04-20)**
+> **Clone Creating Ability**
+>- Clone_Skill 스크립트 추가
+>- Clone의 Prefab 제작 및 Prefab 안에 Clone_Skill_Controller 스크립트 추가
+>- Clone_Skill_Controller 스크립트 내에 Duration과 Position을 전달해 각 Prefab마다 지속시간과 위치를 다르게 구현함
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-18)</b></summary>
+
 > **Creating Player Manager and Skill Manager**
 >- 싱글톤 기법을 이용한 PlayerManager, SkillManager 스크립트 및 오브젝트 추가
 >
@@ -144,7 +172,8 @@
 >- 추가적인 Dash Skill을 Dash_Skill 스크립트로 구현, Player 스크립트의 대쉬조건 변경 및 관련변수 삭제
 >- 모든 Skill은 싱글톤 패턴으로 구현된 SkillManager에 의해 호출됨 
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-16)</b></summary>
 
