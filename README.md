@@ -147,19 +147,32 @@
 
 - 스크립트에서 변수에 값을 넣는 방법으로 Awake에서 넣던가 Start에서 넣을 수 있음
 - 생명주기 상으로 Awake 다음 Start가 불러와짐
-- Awake에서 선언하는 경우는 Script를 불러오는 경우 (new Script()로 선언해서 가져오는 경우)
-- Start에서 선언하는 경우는 GameObject를 불러오는 경우 (GetComponent() 등)
+- 또한 Awake는 인스턴스가 초기화됐을 때 실행됨 : 비활성화 상태여도 게임씬에 있기 때문에 실행됨, Start는 비활성화 된 경우 실행안됨
+- Awake는 실행시기에 Scene에 존재하는 모든 오브젝트가 이미 생성되었음이 보장됨
+- 그래서 스크립트나 컴포넌트의 참조를 위해선 Awake를 사용하는게 바람직함
+- 근데 Awake끼리는 실행 순서가 보장안됨 -> Awake간에 먼저 실행되야하는 코드가 있다면 Awake로 선실행 후 Start에서 실행
 
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-20)**
+**⚙ (2024-04-22)**
+> **Clone's Attack**
+>- 실제로 생성된 Clone이 공격함
+>- Clone Prefab의 Animator와 Animation 조정
+>- Clone_Skill_Controller 스크립트에 Player의 공격하는 함수들 추가
+>- Clone이 가장 가까운 적을 향해 공격하도록 스크립트 추가
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-20)</b></summary>
+
 > **Clone Creating Ability**
 >- Clone_Skill 스크립트 추가
 >- Clone의 Prefab 제작 및 Prefab 안에 Clone_Skill_Controller 스크립트 추가
 >- Clone_Skill_Controller 스크립트 내에 Duration과 Position을 전달해 각 Prefab마다 지속시간과 위치를 다르게 구현함
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-18)</b></summary>
 
