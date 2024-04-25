@@ -155,14 +155,23 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-22)**
-> **Clone's Attack**
->- 실제로 생성된 Clone이 공격함
->- Clone Prefab의 Animator와 Animation 조정
->- Clone_Skill_Controller 스크립트에 Player의 공격하는 함수들 추가
->- Clone이 가장 가까운 적을 향해 공격하도록 스크립트 추가
+**⚙ (2024-04-25)**
+> **Sword Throw Skill State**
+>- 칼을 던지는 스킬을 위한 기초 작업 수행
+>- AimSwordState, CatchSwordState, SwordSkill 스크립트 추가
+>- playerAimSword, playerThrowSword, playerCatchSword Animation 추가 및 Animator 적용
 
 ## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-22)</b></summary>
+
+> **Clone Creating Ability**
+>- Clone_Skill 스크립트 추가
+>- Clone의 Prefab 제작 및 Prefab 안에 Clone_Skill_Controller 스크립트 추가
+>- Clone_Skill_Controller 스크립트 내에 Duration과 Position을 전달해 각 Prefab마다 지속시간과 위치를 다르게 구현함
+
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-20)</b></summary>
 
