@@ -155,13 +155,25 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-25)**
+**⚙ (2024-04-27)**
+> **Setting up details of the sword**
+>- Sword Prefab 제작 및 안에 들어갈 Sword_Skill_Controller 스크립트 추가
+>- SkillManager를 통해 에 Sword_Skill 스크립트에 접근하고 그 안의 CreateSword()를 통해 Prefab 생성
+>- CreateSword()에는 Instantiate()와 Sword_Skill_Controller 스크립트의 SetupSword()를 실행함
+>- SetupSword()는 방향과 중력크기를 인자로 받아 Sword의 방향/중력을 조절함
+>- 기초적인 Sword의 AC, Animator, Idle Animation, Filp Animation 추가
+
+## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-25)</b></summary>
+
 > **Sword Throw Skill State**
 >- 칼을 던지는 스킬을 위한 기초 작업 수행
 >- AimSwordState, CatchSwordState, SwordSkill 스크립트 추가
 >- playerAimSword, playerThrowSword, playerCatchSword Animation 추가 및 Animator 적용
 
-## 🧾 Update History
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-22)</b></summary>
 
