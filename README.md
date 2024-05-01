@@ -155,14 +155,25 @@
 </details>
 
 ## 📢 Recent Update
-**⚙ (2024-04-29)**
-> **Setting up sword's aim**
->- Sword가 실제로 날아가는 방향 계산 및 수정 (마우스 정보 이용)
->- Sword가 날아갈 경로를 DotPrefab 이용해 표시
->- Sword Skill이 불려오면 DotPrefab을 생성(SetActive(false))
->- PlayerAimSwordState 시 Prefab을 보이고 GenerateSword() 이후 Prefab을 다시 숨김
+**⚙ (2024-05-01)**
+> **Improving sword's behaviour**
+>- 검이 날아갈 때 transform.right가 날아가는 방향(rb.velocity)으로 고정됨
+>- 이제 검은 Enemy나 Ground를 만나면 박힘
+>- 날아간 검이 하나라도 있다면 검을 다시 날릴 수 없음
+>- 대신 날아간 검을 다시 돌아오게 함
+>- 검이 생성되고 어딘가에 박힐때까지 빙빙 도는 Animation이 나옴
 
 ## 🧾 Update History
+<details>
+<summary><b>⚙ (2024-04-29)</b></summary>
+
+> **Sword Throw Skill State**
+>- 칼을 던지는 스킬을 위한 기초 작업 수행
+>- AimSwordState, CatchSwordState, SwordSkill 스크립트 추가
+>- playerAimSword, playerThrowSword, playerCatchSword Animation 추가 및 Animator 적용
+
+</details>
+
 <details>
 <summary><b>⚙ (2024-04-27)</b></summary>
 
